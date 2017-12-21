@@ -2,21 +2,21 @@
 <Defs>
 	<ResearchTabDef>
 		<defName>MaD_ResearchTabCore</defName>
-		<label>Mythsearch &amp; Development - Core</label>
+		<label>M&amp;D - Core</label>
 	</ResearchTabDef>
 	
 	<ResearchTabDef>
 		<defName>MaD_ResearchTabPhys</defName>
-		<label>Mythsearch &amp; Development - Physics</label>
+		<label>M&amp;D - Physics</label>
 	</ResearchTabDef>
 	
 	<ResearchTabDef>
 		<defName>MaD_ResearchTabPsy</defName>
-		<label>Mythsearch &amp; Development - Psychology</label>
+		<label>M&amp;D - Psychology</label>
 	</ResearchTabDef>
 	
 	<ResearchTabDef>
 		<defName>MaD_ResearchTabBio</defName>
-		<label>Mythsearch &amp; Development - Biology</label>
+		<label>M&amp;D - Biology</label>
 	</ResearchTabDef>
 </Defs>
