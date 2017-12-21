@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============================-->
+	<!--==Tier-Unlocking Researches==-->
+	<!--=============================-->
+	
+	<ResearchProjectDef>
+		<defName>MaD_BaseTier1</defName>
+		<label>discerning the transmundane</label>
+		<description>You’re stumbling closer and closer to something enormous. Your scientists have devised an equation so mind-bogglingly complex it requires an advanced AI to even begin solving it, but it may allow wondrous mathematical feats like proving that 1 = 0, and calculating the last digit of Pi. Completing this research may allow your colony to build a computer that is able to bend, and even break, the last boundaries of mathematics.</description>
+		<baseCost>5500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>ShipComputerCore</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_BaseTier2</defName>
+		<label>defying the mandates</label>
+		<description>We have fulfilled our potential as humans. Now, it is time to step beyond humanity. We will reach out into the void of space, and we will pull back the veil. This research enables you to build a machine which fuses alien mythos and human technology, bending the very laws of physics and sanity.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Ultra</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench1</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier1</li>
+			<!--TODO Add all tier 1 researches-->
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_BaseTier3</defName>
+		<label>analyzing eternity</label>
+		<description>After having stepped beyond our mere human understanding, we have realized that there are still open secrets that may not yet be solved by us. But the answers are out there. Not in the today, but in the yesterday, in the tomorrow. How glorious must it feel to see the Cosmos from the view of one who exists in all times at once? Completing this research will enable us to delve deeper in the underlying foundations of the Universe, and surpass the last boundary, and humanity's oldest enemy: Time.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench2</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier2</li>
+			<!--TODO Add all tier 2 researches-->
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_BaseTier4</defName>
+		<label>usurping ascension</label>
+		<description>While our understanding is almost complete, there are yet beings beyond our grasp. Oh, how the feeble-minded cults praise their Gods, not realizing that reaching their seats of power is but a leap of faith! By turning our theoretical knowledge towards practical uses, we may construct truly wondrous machines, ensuring domination of the planet. Completing this research will pave the way towards creating the crowning technologies of each scientific field.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench3</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier3</li>
+			<!--TODO Add all tier 3 researches-->
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<!--============================-->
+	<!--====Game-Ending Research====-->
+	<!--============================-->
+	
+	<ResearchProjectDef>
+		<defName>MaD_EndGame</defName>
+		<label>the final leap</label>
+		<description>We stand at a threshold, us brothers and sisters. Through perseverance, we have turned our bodies, our minds, and the world around us towards the purpose we have chosen. A final leap shall see us transported into the Realms of the Gods, where we shall dance in the Court of Azathoth, and finally escape the fate of all things mortal. Excelsior.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench3</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier4</li>
+			<!--TODO Add all tier 4 researches-->
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>3</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<!--============================-->
+	<!--======Psychology Tiers======-->
+	<!--============================-->
+	
+	<ResearchProjectDef>
+		<defName>MaD_PsyTier1</defName>
+		<label>parapsychology (tier 1)</label>
+		<description>After completing the Zero Theorem, new avenues of observation have been opened. Now that we are able to describe the mind and its fluctuations in mathematical terms, deeper insight into the operating system of the human mind is possible.</description>
+		<baseCost>5500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench1</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>MaD_BaseTier1</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_PsyTier2</defName>
+		<label>xenopsychology (tier 2)</label>
+		<description>Many extraterrestrial beings pose additional problems when debating the nature of sentience. Be they sapient or bestial in behavior, their thought-processes are unlike those of terrestrial life, and yet they are thought nonetheless. By unlocking their secrets, we shall finally reveal the interaction between mind and matter, breaking the divide between flesh and spirit.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Ultra</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench2</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier2</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_PsyTier3</defName>
+		<label>transcendent cognition (tier 3)</label>
+		<description>Once, we thought the Mind to be a slave of the body, bound by hormones, physical sensations, by pain and pleasure. No more. By formulating an underlying theory of the Mind, we have found ways to preserve and transport the human mind across spatial and temporal boundaries, freeing it from the cruel dictatorship of the human form.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench3</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier3</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_PsyTier4</defName>
+		<label>telepathic matrices (tier e)</label>
+		<description>If we turn our understanding of the Mind towards more practical purposes, opportunities present themselves. Through careful manipulation of psionic energy and psycho-active crystal networks, we may be able to construct a highly efficient psionic amplifier, allowing us to not only play havoc with the minds in the vicinity of our colony, but to subtly influence thought-processes across the planet, asserting our will over those weaker in spirit.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench4</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier4</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<!--===========================-->
+	<!--=======Physics Tiers=======-->
+	<!--===========================-->
+	
+	<ResearchProjectDef>
+		<defName>MaD_PhysTier1</defName>
+		<label>four-dimensional physics (tier 1)</label>
+		<description>While a fourth spatial dimension has been known to our scientists for centuries, until now, we have lacked the ability to manipulate it. With our understanding of mathematics and interspatial relationships growing, we now have the tools to move and rotate bodies in their fourth dimension.</description>
+		<baseCost>5500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench1</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>MaD_BaseTier1</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_PhysTier2</defName>
+		<label>non-euclidian physics (tier 2)</label>
+		<description>At the quantum level, physics becomes unpredictable. The old laws do not hold anymore, as the dance of subatomic particles switches randomly, depending on observability and other unknown factors. But what if it was not random, if there was a will guiding the dance, if what we call laws of physics were but philosophical moral imperatives, which may be debated in kind, and even abolished?</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Ultra</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench2</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier2</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_PhysTier3</defName>
+		<label>dimensional manipulation (tier 3)</label>
+		<description>Our theoretical knowledge of physics has come to its theoretical end. As our spatial perception expands, we ask ourselves: “Must it be so?”, is there not a place where the laws might differ from our own? And what of that last conqueror, time? Our scientists say that there is another dimension out there, nay, trillions, and soon we shall make contact.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench3</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier3</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_PhysTier4</defName>
+		<label>space-fold generator (tier e)</label>
+		<description>Having achieved mastery over physics, space itself, nay, spatial perception itself is our plaything. If we put our accumulated knowledge to use, we may create bends in space itself, and utilize them to reduce a journey of months into a journey of seconds. Soon, we shall build a Gate of Stars.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench4</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier4</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<!--===========================-->
+	<!--=======Biology Tiers=======-->
+	<!--===========================-->
+	
+	<ResearchProjectDef>
+		<defName>MaD_BioTier1</defName>
+		<label>extraterrestrial biology (tier 1)</label>
+		<description>Life always finds a way. While our understanding of our own bodily functions and of most terrestrial life is near complete, nature still holds secrets beyond the stars. By examining ancient bacterial colonies, and comparing them to alien cell structures, we may develop a more concrete theory of evolutionary adaptation on other planets and foreign environments.</description>
+		<baseCost>5500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench1</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>MaD_BaseTier1</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_BioTier2</defName>
+		<label>eldritch biology (tier 2)</label>
+		<description>The desire to exist, and to expand that existence, crosses boundaries of space, and sometimes sanity. By analyzing creatures spawned from alternate dimensions, we have created a unifying theory of the weirdest self-replicating phenomenon known to man: Life. When such extradimensional creatures do not even possess a metabolism, other common denominators must be found.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Ultra</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench2</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier2</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_BioTier3</defName>
+		<label>the litany of flesh (tier 3)</label>
+		<description>With mastery of one’s own DNA comes mastery of one’s own evolutionary path. By controlling our own DNA, we have reached a state of sustained Autoevolution, taking our natural bodies granted by Nature, and refining them into something superior. At our touch, bone and sinew twist, and form the base of a new Humanity.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench3</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier3</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MaD_BioTier4</defName>
+		<label>the cellular cruicible (tier e)</label> <!--TODO: Change this?-->
+		<description>Making practical use of our biological understanding, we are working on creating a replication of the primordial ooze, a modern blacksmiths workshop where hammer and forge have been replaced by retrovirii and artificial wombs. Once complete, it may allow us to create new, breathing and living lifeforms from nothing but leftover biological matter.</description>
+		<baseCost>7000</baseCost> <!--TODO Change-->
+		<techLevel>Transcendent</techLevel>
+		<requiredResearchBuilding>MaD_ResearchBench4</requiredResearchBuilding>
+		<prerequisites>
+			<li>MaD_BaseTier4</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>MaD_ResearchTabCore</tab>
+	</ResearchProjectDef>
+	
+</Defs>

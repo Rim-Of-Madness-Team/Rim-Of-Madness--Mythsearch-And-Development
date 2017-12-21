@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchTabDef>
+		<defName>MaD_ResearchTabCore</defName>
+		<label>Mythsearch &amp; Development - Core</label>
+	</ResearchTabDef>
+	
+	<ResearchTabDef>
+		<defName>MaD_ResearchTabPhys</defName>
+		<label>Mythsearch &amp; Development - Physics</label>
+	</ResearchTabDef>
+	
+	<ResearchTabDef>
+		<defName>MaD_ResearchTabPsy</defName>
+		<label>Mythsearch &amp; Development - Psychology</label>
+	</ResearchTabDef>
+	
+	<ResearchTabDef>
+		<defName>MaD_ResearchTabBio</defName>
+		<label>Mythsearch &amp; Development - Biology</label>
+	</ResearchTabDef>
+</Defs>
